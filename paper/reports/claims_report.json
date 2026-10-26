@@ -1,0 +1,38 @@
+{
+  "manuscript": "paper/manuscript.md",
+  "status": "PASS",
+  "sections": {
+    "Abstract": {
+      "claims_count": 1,
+      "claims": [
+        {
+          "sentence": "Through rigorous empirical evaluation across 10 evaluation seeds, we demonstrate that our proposed approach achieves a 45.01% latency reduction over Round-Robin while maintaining zero Service Level Agreement (SLA) violations.",
+          "extracted_numbers": [
+            10.0,
+            45.01
+          ],
+          "supported": true,
+          "unsupported_numbers": []
+        }
+      ]
+    },
+    "Introduction": {
+      "claims_count": 1,
+      "claims": [
+        {
+          "sentence": "As benchmarked in preliminary profiling and depicted in Fig. 1, heuristic approaches exhibit high variance in makespan across diverse node profiles.",
+          "extracted_numbers": [
+            1.0
+          ],
+          "supported": true,
+          "unsupported_numbers": []
+        }
+      ]
+    },
+    "Conclusion": {
+      "claims_count": 0,
+      "claims": []
+    }
+  },
+  "unsupported_claims": []
+}

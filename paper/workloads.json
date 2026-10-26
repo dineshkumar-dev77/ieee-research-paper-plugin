@@ -1,0 +1,75 @@
+{
+  "workload_name": "heterogeneous_cloud_1000_tasks",
+  "task_count": 1000,
+  "node_count": 16,
+  "default_arrival_lambda": 1.0,
+  "instruction_distribution": {
+    "type": "bounded_uniform",
+    "min_mips": 500,
+    "max_mips": 5000,
+    "unit": "million_instructions"
+  },
+  "sla_tiers": [
+    {
+      "tier": "Standard",
+      "share": 0.6,
+      "slack_factor_range": [
+        2.0,
+        3.5
+      ]
+    },
+    {
+      "tier": "High_Priority",
+      "share": 0.3,
+      "slack_factor_range": [
+        1.2,
+        2.0
+      ]
+    },
+    {
+      "tier": "Best_Effort",
+      "share": 0.1,
+      "slack_factor_range": [
+        3.5,
+        5.0
+      ]
+    }
+  ],
+  "sweeps": [
+    {
+      "arrival_rate_lambda": 0.5,
+      "intensity": "low"
+    },
+    {
+      "arrival_rate_lambda": 1.0,
+      "intensity": "nominal"
+    },
+    {
+      "arrival_rate_lambda": 2.0,
+      "intensity": "high"
+    }
+  ],
+  "cluster_heterogeneity": {
+    "node_categories": [
+      {
+        "type": "General_Compute",
+        "mips": 1500,
+        "share": 0.375
+      },
+      {
+        "type": "Compute_Optimized",
+        "mips": 2500,
+        "share": 0.375
+      },
+      {
+        "type": "High_Performance",
+        "mips": 4000,
+        "share": 0.25
+      }
+    ]
+  },
+  "seed_reproducibility": {
+    "base_seed": 42,
+    "generator": "Mersenne_Twister_Python_random"
+  }
+}

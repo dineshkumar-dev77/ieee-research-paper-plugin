@@ -1,0 +1,11 @@
+{
+  "total_assets_registered": 5,
+  "compliance_status": "ALL_ASSETS_CLEARED",
+  "assets": [
+    {
+      "asset_id": "fig_1",
+      "category": "Figure",
+      "status": "CLEARED"
+    }
+  ]
+}

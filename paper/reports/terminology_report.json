@@ -1,0 +1,26 @@
+{
+  "manuscript": "paper/manuscript.md",
+  "acronyms_audited": {
+    "SLA": {
+      "expansion": "Service Level Agreement",
+      "defined": true
+    },
+    "MIPS": {
+      "expansion": "Million Instructions Per Second",
+      "defined": true
+    },
+    "QoS": {
+      "expansion": "Quality of Service",
+      "defined": true
+    }
+  },
+  "acronym_violations": [],
+  "method_naming_violations": [],
+  "mathematical_symbols_present": {
+    "\\mathcal{N}": true,
+    "\\mathcal{T}": true,
+    "\\mu_j": true,
+    "\\tau_{i,j}": true
+  },
+  "status": "PASSED"
+}

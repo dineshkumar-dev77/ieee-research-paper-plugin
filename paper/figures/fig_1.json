@@ -1,0 +1,24 @@
+{
+  "figure_number": 1,
+  "caption": "Fig. 1. Makespan comparison across 10 evaluation seeds.",
+  "width_in": 3.5,
+  "dpi": 300,
+  "png_path": "paper/figures/fig_1.png",
+  "pdf_path": "paper/figures/fig_1.pdf",
+  "metric": "makespan_sec",
+  "methods": [
+    "Adaptive-DynaSched",
+    "Round-Robin",
+    "Min-Min"
+  ],
+  "means": [
+    1011.4190000000002,
+    1012.298,
+    1026.01
+  ],
+  "stds": [
+    32.68638807754008,
+    32.91667318143395,
+    29.9776794743467
+  ]
+}

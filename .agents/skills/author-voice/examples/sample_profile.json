@@ -1,0 +1,15 @@
+{
+  "author_profile": {
+    "sample_files": ["author_sample.txt"],
+    "sample_sentence_count": 4,
+    "mean_sentence_length": 21.25,
+    "std_sentence_length": 8.35,
+    "burstiness_index": 0.393
+  },
+  "refinement_metrics": {
+    "edits_count": 2,
+    "burstiness_before": 0.41,
+    "burstiness_after": 0.43,
+    "status": "COMPLIANT"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "run_min_min_s6_1792947015",
+  "method": "Min-Min",
+  "seed": 6,
+  "workload": "heterogeneous_cloud_1000_tasks",
+  "task_count": 1000,
+  "node_count": 16,
+  "metrics": {
+    "makespan_sec": 1014.49,
+    "energy_kwh": 0.39,
+    "latency_ms": 332621.2,
+    "sla_violation_pct": 76.3
+  },
+  "elapsed_sec": 0.0048,
+  "timestamp": "2026-10-25 22:20:15",
+  "code_hash": "25127179d98b",
+  "config_hash": "9a553117514f",
+  "env": "Python 3.9.6 - Darwin arm64"
+}

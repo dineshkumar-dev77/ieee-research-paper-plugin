@@ -1,0 +1,16 @@
+{
+  "manuscript": "paper/manuscript.md",
+  "sources_scanned": [
+    "prior_abstracts.txt"
+  ],
+  "manuscript_token_count": 1062,
+  "source_token_count": 83,
+  "three_gram_overlap_count": 1,
+  "three_gram_similarity_pct": 0.1,
+  "five_gram_overlap_count": 0,
+  "five_gram_similarity_pct": 0.0,
+  "composite_similarity_pct": 0.04,
+  "threshold_pct": 20.0,
+  "status": "PASSED",
+  "official_screening_notice": "Authors must run official IEEE CrossCheck / iThenticate screening prior to final submission."
+}

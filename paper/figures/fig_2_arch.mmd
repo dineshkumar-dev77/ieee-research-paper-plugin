@@ -1,0 +1,12 @@
+graph TD
+    A[Task Arrival Queue<br/>Poisson Process &lambda;] --> B[Task Profiler & Slack Estimator]
+    B --> C[Adaptive-DynaSched Core Engine]
+    C -->|Evaluate Cost J| D{Multi-Objective Utility}
+    D -->|Latency + SLA + Energy| E[Optimal Node Selector]
+    E --> F1[Node N1: General Compute<br/>1500 MIPS]
+    E --> F2[Node N2: Compute-Optimized<br/>2500 MIPS]
+    E --> F3[Node N3: High-Performance<br/>4000 MIPS]
+    F1 --> G[SLA & Energy Feedback Monitor]
+    F2 --> G
+    F3 --> G
+    G -.->|Dynamic Availability| C

@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-10-25 22:20:15",
+  "metrics_analyzed": [
+    "latency_ms",
+    "sla_violation_pct",
+    "makespan_sec",
+    "energy_kwh"
+  ],
+  "workloads": [
+    "heterogeneous_cloud_1000_tasks"
+  ],
+  "summaries": {
+    "makespan_sec::heterogeneous_cloud_1000_tasks": {
+      "Adaptive-DynaSched": {
+        "n": 10,
+        "mean": 1011.419,
+        "std": 32.686,
+        "se": 10.336,
+        "ci95_low": 988.038,
+        "ci95_high": 1034.8,
+        "raw_values": [
+          1047.81,
+          993.32,
+          1050.21,
+          1031.26,
+          983.33,
+          995.46,
+          956.87,
+          1003.19,
+          1054.04,
+          998.7
+        ]
+      },
+      "Round-Robin": {
+        "n": 10,
+        "mean": 1012.298,
+        "std": 32.917,
+        "se": 10.409,
+        "ci95_low": 988.752,
+        "ci95_high": 1035.844,
+        "raw_values": [
+          1049.52,
+          994.46,
+          1050.94,
+          1032.45,
+          983.97,
+          995.61,
+          957.12,
+          1004.17,
+          1054.78,
+          999.96
+        ]
+      },
+      "Min-Min": {
+        "n": 10,
+        "mean": 1026.01,
+        "std": 29.978,
+        "se": 9.48,
+        "ci95_low": 1004.567,
+        "ci95_high": 1047.453,
+        "raw_values": [
+          1063.07,
+          1009.98,
+          1058.98,
+          1048.06,
+          995.42,
+          1014.49,
+          978.93,
+          1015.58,
+          1062.42,
+          1013.17
+        ]
+      }
+    },
+    "energy_kwh::heterogeneous_cloud_1000_tasks": {
+      "Adaptive-DynaSched": {
+        "n": 10,
+        "mean": 0.372,
+        "std": 0.011,
+        "se": 0.003,
+        "ci95_low": 0.364,
+        "ci95_high": 0.38,
+        "raw_values": [
+          0.384,
+          0.367,
+          0.385,
+          0.378,
+          0.362,
+          0.367,
+          0.353,
+          0.369,
+          0.385,
+          0.368
+        ]
+      },
+      "Round-Robin": {
+        "n": 10,
+        "mean": 0.384,
+        "std": 0.011,
+        "se": 0.003,
+        "ci95_low": 0.376,
+        "ci95_high": 0.392,
+        "raw_values": [
+          0.397,
+          0.379,
+          0.397,
+          0.39,
+          0.374,
+          0.379,
+          0.364,
+          0.381,
+          0.396,
+          0.38
+        ]
+      },
+      "Min-Min": {
+        "n": 10,
+        "mean": 0.393,
+        "std": 0.011,
+        "se": 0.003,
+        "ci95_low": 0.385,
+        "ci95_high": 0.4,
+        "raw_values": [
+          0.406,
+          0.388,
+          0.405,
+          0.399,
+          0.383,
+          0.39,
+          0.373,
+          0.391,
+          0.403,
+          0.389
+        ]
+      }
+    },
+    "latency_ms::heterogeneous_cloud_1000_tasks": {
+      "Adaptive-DynaSched": {
+        "n": 10,
+        "mean": 682.88,
+        "std": 10.327,
+        "se": 3.266,
+        "ci95_low": 675.493,
+        "ci95_high": 690.267,
+        "raw_values": [
+          692.4,
+          693.1,
+          686.9,
+          682.1,
+          677.8,
+          693.3,
+          663.4,
+          683.2,
+          668.5,
+          688.1
+        ]
+      },
+      "Round-Robin": {
+        "n": 10,
+        "mean": 1241.72,
+        "std": 22.602,
+        "se": 7.147,
+        "ci95_low": 1225.553,
+        "ci95_high": 1257.887,
+        "raw_values": [
+          1260.5,
+          1257.2,
+          1258.1,
+          1232.9,
+          1235.6,
+          1259.0,
+          1196.5,
+          1251.2,
+          1210.3,
+          1255.9
+        ]
+      },
+      "Min-Min": {
+        "n": 10,
+        "mean": 339232.83,
+        "std": 21694.468,
+        "se": 6860.393,
+        "ci95_low": 323714.62,
+        "ci95_high": 354751.04,
+        "raw_values": [
+          371334.3,
+          328164.9,
+          362866.9,
+          357190.6,
+          330372.8,
+          332621.2,
+          334541.0,
+          307265.9,
+          356128.2,
+          311842.5
+        ]
+      }
+    },
+    "sla_violation_pct::heterogeneous_cloud_1000_tasks": {
+      "Adaptive-DynaSched": {
+        "n": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "se": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "raw_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "Round-Robin": {
+        "n": 10,
+        "mean": 3.07,
+        "std": 0.611,
+        "se": 0.193,
+        "ci95_low": 2.633,
+        "ci95_high": 3.507,
+        "raw_values": [
+          3.3,
+          2.9,
+          2.6,
+          2.2,
+          3.3,
+          3.9,
+          2.7,
+          2.4,
+          4.0,
+          3.4
+        ]
+      },
+      "Min-Min": {
+        "n": 10,
+        "mean": 76.24,
+        "std": 1.687,
+        "se": 0.534,
+        "ci95_low": 75.033,
+        "ci95_high": 77.447,
+        "raw_values": [
+          77.7,
+          76.8,
+          77.3,
+          77.4,
+          76.6,
+          76.3,
+          77.6,
+          72.6,
+          76.2,
+          73.9
+        ]
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "metric": "makespan_sec",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Round-Robin",
+      "pct_improvement": 0.09,
+      "t_statistic": -0.06,
+      "df": 18.0,
+      "p_value": 0.9529,
+      "cohens_d": -0.027
+    },
+    {
+      "metric": "makespan_sec",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Min-Min",
+      "pct_improvement": 1.42,
+      "t_statistic": -1.04,
+      "df": 17.9,
+      "p_value": 0.3122,
+      "cohens_d": -0.465
+    },
+    {
+      "metric": "energy_kwh",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Round-Robin",
+      "pct_improvement": 3.13,
+      "t_statistic": -2.439,
+      "df": 18.0,
+      "p_value": 0.0254,
+      "cohens_d": -1.091
+    },
+    {
+      "metric": "energy_kwh",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Min-Min",
+      "pct_improvement": 5.34,
+      "t_statistic": -4.269,
+      "df": 18.0,
+      "p_value": 0.0005,
+      "cohens_d": -1.909
+    },
+    {
+      "metric": "latency_ms",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Round-Robin",
+      "pct_improvement": 45.01,
+      "t_statistic": -71.116,
+      "df": 12.6,
+      "p_value": 0.0,
+      "cohens_d": -31.804
+    },
+    {
+      "metric": "latency_ms",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Min-Min",
+      "pct_improvement": 99.8,
+      "t_statistic": -49.348,
+      "df": 9.0,
+      "p_value": 0.0,
+      "cohens_d": -22.069
+    },
+    {
+      "metric": "sla_violation_pct",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Round-Robin",
+      "pct_improvement": 100.0,
+      "t_statistic": -15.889,
+      "df": 9.0,
+      "p_value": 0.0,
+      "cohens_d": -7.106
+    },
+    {
+      "metric": "sla_violation_pct",
+      "workload": "heterogeneous_cloud_1000_tasks",
+      "proposed_method": "Adaptive-DynaSched",
+      "baseline_method": "Min-Min",
+      "pct_improvement": 100.0,
+      "t_statistic": -142.912,
+      "df": 9.0,
+      "p_value": 0.0,
+      "cohens_d": -63.912
+    }
+  ],
+  "summary_ledger_rows_added": 64
+}

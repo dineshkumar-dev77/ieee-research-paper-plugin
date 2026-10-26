@@ -1,0 +1,2 @@
+ACKNOWLEDGMENT
+During the preparation of this work, the authors utilized the Antigravity Autonomous Research Assistant for benchmark orchestration, Statistical compilation, table formatting, and narrative synthesis (Section IV), Hypothesis testing and effect size documentation (Section V), and automated verification of manuscript numerical consistency against the experimental ledger. All experimental evaluations were reviewed, validated, and verified by the authors.

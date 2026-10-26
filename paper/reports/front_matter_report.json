@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "manuscript": "paper/manuscript.md",
+  "title": "Adaptive Dynamic Scheduling for Heterogeneous Cloud Workloads",
+  "abstract_length_words": 74,
+  "index_terms": [
+    "Cloud computing",
+    "Energy efficiency",
+    "Quality of service",
+    "Task scheduling"
+  ],
+  "errors": []
+}

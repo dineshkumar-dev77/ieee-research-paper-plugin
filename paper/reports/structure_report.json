@@ -1,0 +1,41 @@
+{
+  "manuscript": "paper/manuscript.md",
+  "status": "PASS",
+  "required_count": 8,
+  "found_count": 8,
+  "found_sections": {
+    "Abstract": {
+      "line": 3,
+      "heading": "## Abstract"
+    },
+    "Index Terms": {
+      "line": 6,
+      "heading": "**Index Terms**\u2014Cloud computing, Energy efficiency, Quality of service, Task scheduling."
+    },
+    "I. Introduction": {
+      "line": 8,
+      "heading": "## I. Introduction"
+    },
+    "II. Related Work": {
+      "line": 11,
+      "heading": "## II. Related Work"
+    },
+    "III. System Architecture and Methodology": {
+      "line": 14,
+      "heading": "## III. System Architecture and Methodology"
+    },
+    "IV. Experimental Results": {
+      "line": 4,
+      "heading": "Modern cloud datacenters require efficient task scheduling under fluctuating arrival rates and heterogeneous processor capabilities. In this work, we propose Adaptive-DynaSched, a load-aware scheduling framework that dynamically balances execution makespan, energy consumption, and deadline compliance. Through rigorous empirical evaluation across 10 evaluation seeds, we demonstrate that our proposed approach achieves a 45.01% latency reduction over Round-Robin while maintaining zero Service Level Agreement (SLA) violations."
+    },
+    "V. Conclusion": {
+      "line": 68,
+      "heading": "## V. Conclusion"
+    },
+    "References": {
+      "line": 75,
+      "heading": "## References"
+    }
+  },
+  "missing_sections": []
+}

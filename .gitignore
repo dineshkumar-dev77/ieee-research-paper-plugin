@@ -1,0 +1,27 @@
+# macOS artifacts
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Submission bundle archives
+paper/submission_bundle/
+paper/submission_bundle.zip
+
+# Temporary test scratch
+tmp/
+*.tmp

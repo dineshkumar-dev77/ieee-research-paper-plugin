@@ -1,0 +1,118 @@
+{
+  "title": "Adaptive Dynamic Scheduling for Heterogeneous Cloud Workloads",
+  "domain": "cloud_task_scheduling",
+  "methods": {
+    "proposed": "Adaptive-DynaSched",
+    "baselines": [
+      "Round-Robin",
+      "Min-Min"
+    ]
+  },
+  "metrics": [
+    {
+      "name": "makespan_sec",
+      "unit": "seconds",
+      "direction": "lower_is_better"
+    },
+    {
+      "name": "energy_kwh",
+      "unit": "kWh",
+      "direction": "lower_is_better"
+    },
+    {
+      "name": "latency_ms",
+      "unit": "ms",
+      "direction": "lower_is_better"
+    },
+    {
+      "name": "sla_violation_pct",
+      "unit": "%",
+      "direction": "lower_is_better"
+    }
+  ],
+  "workloads": [
+    {
+      "name": "heterogeneous_cloud_1000_tasks",
+      "task_count": 1000,
+      "node_count": 16
+    }
+  ],
+  "system_parameters": {
+    "cluster_nodes": 16,
+    "mips_profiles": [
+      1500,
+      2500,
+      4000
+    ],
+    "idle_power_w": [
+      50.0,
+      75.0,
+      100.0
+    ],
+    "peak_power_w": [
+      180.0,
+      240.0,
+      320.0
+    ]
+  },
+  "seeds": {
+    "count": 10,
+    "list": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "How does Adaptive-DynaSched compare to heuristic baselines in makespan and latency?",
+      "primary_metric": "makespan_sec",
+      "methods": [
+        "Adaptive-DynaSched",
+        "Round-Robin",
+        "Min-Min"
+      ]
+    },
+    {
+      "id": "RQ2",
+      "question": "What is the energy efficiency impact across heterogeneous cloud clusters?",
+      "primary_metric": "energy_kwh",
+      "methods": [
+        "Adaptive-DynaSched",
+        "Round-Robin",
+        "Min-Min"
+      ]
+    },
+    {
+      "id": "RQ3",
+      "question": "How effectively does adaptive allocation maintain SLA guarantees under arrival variance?",
+      "primary_metric": "sla_violation_pct",
+      "methods": [
+        "Adaptive-DynaSched",
+        "Round-Robin",
+        "Min-Min"
+      ]
+    }
+  ],
+  "parameter_sweeps": {
+    "task_arrival_rate": [
+      1.0,
+      2.0,
+      5.0
+    ]
+  },
+  "ablations": [
+    {
+      "name": "No-DynamicAdjustment",
+      "description": "Adaptive-DynaSched with static weights"
+    }
+  ]
+}

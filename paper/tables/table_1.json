@@ -1,0 +1,28 @@
+{
+  "table_number": 1,
+  "roman_numeral": "I",
+  "caption": "TABLE I PERFORMANCE COMPARISON UNDER HETEROGENEOUS CLOUD WORKLOADS",
+  "rows": [
+    {
+      "method": "Adaptive-DynaSched",
+      "makespan_sec": "1011.42 \u00b1 32.69",
+      "energy_kwh": "0.370 \u00b1 0.010",
+      "latency_ms": "682.9 \u00b1 10.3",
+      "sla_violation_pct": "0.00% \u00b1 0.00%"
+    },
+    {
+      "method": "Round-Robin",
+      "makespan_sec": "1012.30 \u00b1 32.92",
+      "energy_kwh": "0.380 \u00b1 0.010",
+      "latency_ms": "1241.7 \u00b1 22.6",
+      "sla_violation_pct": "3.07% \u00b1 0.61%"
+    },
+    {
+      "method": "Min-Min",
+      "makespan_sec": "1026.01 \u00b1 29.98",
+      "energy_kwh": "0.390 \u00b1 0.010",
+      "latency_ms": "339232.8 \u00b1 21694.5",
+      "sla_violation_pct": "76.24% \u00b1 1.69%"
+    }
+  ]
+}

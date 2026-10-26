@@ -1,0 +1,19 @@
+{
+  "run_id": "run_round_robin_s1_1792947015",
+  "method": "Round-Robin",
+  "seed": 1,
+  "workload": "heterogeneous_cloud_1000_tasks",
+  "task_count": 1000,
+  "node_count": 16,
+  "metrics": {
+    "makespan_sec": 1049.52,
+    "energy_kwh": 0.397,
+    "latency_ms": 1260.5,
+    "sla_violation_pct": 3.3
+  },
+  "elapsed_sec": 0.0015,
+  "timestamp": "2026-10-25 22:20:15",
+  "code_hash": "25127179d98b",
+  "config_hash": "9a553117514f",
+  "env": "Python 3.9.6 - Darwin arm64"
+}

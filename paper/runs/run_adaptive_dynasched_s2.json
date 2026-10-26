@@ -1,0 +1,19 @@
+{
+  "run_id": "run_adaptive_dynasched_s2_1792947015",
+  "method": "Adaptive-DynaSched",
+  "seed": 2,
+  "workload": "heterogeneous_cloud_1000_tasks",
+  "task_count": 1000,
+  "node_count": 16,
+  "metrics": {
+    "makespan_sec": 993.32,
+    "energy_kwh": 0.367,
+    "latency_ms": 693.1,
+    "sla_violation_pct": 0.0
+  },
+  "elapsed_sec": 0.0078,
+  "timestamp": "2026-10-25 22:20:15",
+  "code_hash": "25127179d98b",
+  "config_hash": "9a553117514f",
+  "env": "Python 3.9.6 - Darwin arm64"
+}

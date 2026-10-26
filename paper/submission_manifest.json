@@ -1,0 +1,143 @@
+{
+  "package_name": "IEEE_TCC_Adaptive_DynaSched_Submission",
+  "venue": "IEEE Transactions on Cloud Computing (TCC)",
+  "archive_file": "submission_bundle.zip",
+  "archive_sha256": "2164c7c310a022b673175419e1b2324599eb3999a5ae287c5c2671d6d9dca92d",
+  "total_files": 9,
+  "preflight_gate_status": "ALL_11_CHECKS_PASSED",
+  "preflight_audits": [
+    {
+      "check": "Numbers Ledger Verification",
+      "command": "python3 .agents/skills/results-ledger/scripts/numbers_check.py --manuscript paper/manuscript.md --ledger paper/results.csv",
+      "passed": true,
+      "returncode": 0,
+      "output": "[PASS] All 41 experimental numbers verified against ledger (paper/results.csv)."
+    },
+    {
+      "check": "Format & Caption Alignment",
+      "command": "python3 .agents/skills/format-align/scripts/format_align.py --manuscript paper/manuscript.md",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"manuscript\": \"paper/manuscript.md\",\n  \"table_captions_found\": 1,\n  \"figure_captions_found\": 4,\n  \"table_references_count\": 1,\n  \"figure_references_count\": 2,\n  \"errors\": [],\n  \"warnings\": [],\n  \"status\": \"PASS\"\n}"
+    },
+    {
+      "check": "Front Matter & Abstract Rigor",
+      "command": "python3 .agents/skills/front-matter-check/scripts/front_matter_check.py --manuscript paper/manuscript.md",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"manuscript\": \"paper/manuscript.md\",\n  \"title\": \"Adaptive Dynamic Scheduling for Heterogeneous Cloud Workloads\",\n  \"abstract_length_words\": 74,\n  \"index_terms\": [\n    \"Cloud computing\",\n    \"Energy efficiency\",\n    \"Quality of service\",\n    \"Task scheduling\"\n  ],\n  \"errors\": []\n}"
+    },
+    {
+      "check": "Sequential Citation Verification",
+      "command": "python3 .agents/skills/citation_check/scripts/citation_check.py --manuscript paper/manuscript.md",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"manuscript\": \"paper/manuscript.md\",\n  \"citations_found_count\": 10,\n  \"citations_sequence\": [\n    1,\n    2,\n    3,\n    4,\n    5,\n    6,\n    7,\n    8,\n    9,\n    10\n  ],\n  \"references_count\": 10,\n  \"errors\": []\n}"
+    },
+    {
+      "check": "Graphics Compliance Audit",
+      "command": "python3 .agents/skills/graphics-compliance/scripts/graphics_compliance.py --figures-dir paper/figures --venue paper/venue.json",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"figures_checked\": 2,\n  \"audits\": [\n    {\n      \"file\": \"fig_1.png\",\n      \"dimensions_px\": [\n        1019,\n        750\n      ],\n      \"dpi\": 300,\n      \"is_line_art\": false,\n      \"required_dpi\": 300,\n      \"effective_width_in\": 3.4,\n      \"width_compliant\": true,\n      \"dpi_compliant\": true,\n      \"caption\": \"Fig. 1. Makespan comparison across 10 evaluation seeds.\",\n      \"caption_compliant\": true\n    },\n    {\n      \"file\": \"fig_2.png\",\n      \"dimensions_px\": [\n        2063,\n        2460\n      ],\n      \"dpi\": 600,\n      \"is_line_art\": true,\n      \"required_dpi\": 600,\n      \"effective_width_in\": 3.44,\n      \"width_compliant\": true,\n      \"dpi_compliant\": true,\n      \"caption\": \"Fig. 2. Proposed Adaptive-DynaSched system architecture and scheduling pipeline.\",\n      \"caption_compliant\": true\n    }\n  ],\n  \"errors\": []\n}"
+    },
+    {
+      "check": "IEEE Section Structure Review",
+      "command": "python3 .agents/skills/structure-review/scripts/structure_review.py --manuscript paper/manuscript.md",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"manuscript\": \"paper/manuscript.md\",\n  \"status\": \"PASS\",\n  \"required_count\": 8,\n  \"found_count\": 8,\n  \"found_sections\": {\n    \"Abstract\": {\n      \"line\": 3,\n      \"heading\": \"## Abstract\"\n    },\n    \"Index Terms\": {\n      \"line\": 6,\n      \"heading\": \"**Index Terms**\\u2014Cloud computing, Energy efficiency, Quality of service, Task scheduling.\"\n    },\n    \"I. Introduction\": {\n      \"line\": 8,\n      \"heading\": \"## I. Introduction\"\n    },\n    \"II. Related Work\": {\n      \"line\": 11,\n      \"heading\": \"## II. Related Work\"\n    },\n    \"III. System Architecture and Methodology\": {\n      \"line\": 14,\n      \"heading\": \"## III. System Architecture and Methodology\"\n    },\n    \"IV. Experimental Results\": {\n      \"line\": 4,\n      \"heading\": \"Modern cloud datacenters require efficient task scheduling under fluctuating arrival rates and heterogeneous processor capabilities. In this work, we propose Adaptive-DynaSched, a load-aware scheduling framework that dynamically balances execution makespan, energy consumption, and deadline compliance. Through rigorous empirical evaluation across 10 evaluation seeds, we demonstrate that our proposed approach achieves a 45.01% latency reduction over Round-Robin while maintaining zero Service Level Agreement (SLA) violations.\"\n    },\n    \"V. Conclusion\": {\n      \"line\": 68,\n      \"heading\": \"## V. Conclusion\"\n    },\n    \"References\": {\n      \"line\": 75,\n      \"heading\": \"## References\"\n    }\n  },\n  \"missing_sections\": []\n}"
+    },
+    {
+      "check": "Quantitative Claims Audit",
+      "command": "python3 .agents/skills/claims-check/scripts/claims_check.py --manuscript paper/manuscript.md --ledger paper/results.csv",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"manuscript\": \"paper/manuscript.md\",\n  \"status\": \"PASS\",\n  \"sections\": {\n    \"Abstract\": {\n      \"claims_count\": 1,\n      \"claims\": [\n        {\n          \"sentence\": \"Through rigorous empirical evaluation across 10 evaluation seeds, we demonstrate that our proposed approach achieves a 45.01% latency reduction over Round-Robin while maintaining zero Service Level Agreement (SLA) violations.\",\n          \"extracted_numbers\": [\n            10.0,\n            45.01\n          ],\n          \"supported\": true,\n          \"unsupported_numbers\": []\n        }\n      ]\n    },\n    \"Introduction\": {\n      \"claims_count\": 1,\n      \"claims\": [\n        {\n          \"sentence\": \"As benchmarked in preliminary profiling and depicted in Fig. 1, heuristic approaches exhibit high variance in makespan across diverse node profiles.\",\n          \"extracted_numbers\": [\n            1.0\n          ],\n          \"supported\": true,\n          \"unsupported_numbers\": []\n        }\n      ]\n    },\n    \"Conclusion\": {\n      \"claims_count\": 0,\n      \"claims\": []\n    }\n  },\n  \"unsupported_claims\": []\n}"
+    },
+    {
+      "check": "Simulation Validity Audit",
+      "command": "python3 .agents/skills/sim-validity-check/scripts/sim_validity_check.py --ledger paper/results.csv",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"runs_analyzed\": 30,\n  \"ledger_rows_checked\": 120,\n  \"seed_counts\": {\n    \"Adaptive-DynaSched\": 10,\n    \"Round-Robin\": 10,\n    \"Min-Min\": 10\n  },\n  \"code_hashes\": [\n    \"25127179d98b\"\n  ],\n  \"config_hashes\": [\n    \"9a553117514f\"\n  ],\n  \"errors\": []\n}"
+    },
+    {
+      "check": "AI Usage Disclosure (Guardrail 4)",
+      "command": "python3 .agents/skills/ai-disclosure/scripts/ai_disclosure.py --audit --log paper/reports/ai_usage_log.json --ack paper/reports/ai_acknowledgment.txt --manuscript paper/manuscript.md",
+      "passed": true,
+      "returncode": 0,
+      "output": "[PASS] AI disclosure fully synchronized and compliant with Guardrail 4."
+    },
+    {
+      "check": "Terminology & Acronym Audit",
+      "command": "python3 .agents/skills/terminology-check/scripts/terminology_check.py --manuscript paper/manuscript.md",
+      "passed": true,
+      "returncode": 0,
+      "output": "[PASS] Terminology audit completed. Report: paper/reports/terminology_report.json"
+    },
+    {
+      "check": "Originality & N-Gram Guard",
+      "command": "python3 .agents/skills/originality-guard/scripts/originality_guard.py --manuscript paper/manuscript.md --sources paper/sources",
+      "passed": true,
+      "returncode": 0,
+      "output": "[PASS] Originality audit passed (0.04% overlap). Report: paper/reports/originality_report.json"
+    }
+  ],
+  "manifest_files": [
+    {
+      "file": "manuscript.docx",
+      "source": "paper/manuscript.docx",
+      "size_bytes": 40738,
+      "sha256": "8b991fd674c93d34b9ae38252e568dc7299682a9b58c6f0f0eea4adf02866fcc"
+    },
+    {
+      "file": "manuscript.md",
+      "source": "paper/manuscript.md",
+      "size_bytes": 8386,
+      "sha256": "ba88feef152aa9fc9f774f127854defa33e9d94628fe9df01dbbaa146b957a1a"
+    },
+    {
+      "file": "table_1.tex",
+      "source": "paper/tables/table_1.tex",
+      "size_bytes": 578,
+      "sha256": "9de33974507c6aa3c1546398b96771250ff88f1ba703e5dae76c50db6c968d7c"
+    },
+    {
+      "file": "fig_1.pdf",
+      "source": "paper/figures/fig_1.pdf",
+      "size_bytes": 16760,
+      "sha256": "a0fe4cc280512fa2353347695d80936c7b531a567389607c8c30fc2c51532c86"
+    },
+    {
+      "file": "fig_1.png",
+      "source": "paper/figures/fig_1.png",
+      "size_bytes": 40804,
+      "sha256": "2fdaa67dc8815cc1c3477a0d2b8430368defdb1690f160c878e886090aa04e02"
+    },
+    {
+      "file": "fig_2.pdf",
+      "source": "paper/figures/fig_2.pdf",
+      "size_bytes": 21639,
+      "sha256": "36ecc760b79c5dabea4ef58f6d743ac0652efb8c3819740da58ab825c25413e6"
+    },
+    {
+      "file": "fig_2.png",
+      "source": "paper/figures/fig_2.png",
+      "size_bytes": 261423,
+      "sha256": "7e786d71514290bc071063d20c8bbe217e49774ed9eefd1dc80314b30c371064"
+    },
+    {
+      "file": "ai_acknowledgment.txt",
+      "source": "paper/reports/ai_acknowledgment.txt",
+      "size_bytes": 471,
+      "sha256": "254ed15f3f4101ddc2ec0de945511c0f6a9d0cdb5a46a42c453f2d68b4399fa3"
+    },
+    {
+      "file": "rebuttal_letter.md",
+      "source": "paper/reports/rebuttal_letter.md",
+      "size_bytes": 2245,
+      "sha256": "2b3a9219a518ce55620af608444969386d09e808946af1312ad629b873174516"
+    }
+  ]
+}

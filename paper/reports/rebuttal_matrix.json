@@ -1,0 +1,26 @@
+{
+  "overall_recommendation": "Accept with Minor Revisions",
+  "rebuttal_items": [
+    {
+      "reviewer": "Reviewer 1",
+      "focus": "Methodology & Mathematical Rigor",
+      "question": "How does the dispatch decision boundary adapt when node failure occurs mid-execution?",
+      "author_response": "We thank Reviewer 1 for this insightful observation. In Section III-C, we have clarified the dynamic decision boundary behavior under node degradation. Specifically, when a node experiences latency spikes, the dispatch heuristic shifts subsequent tasks to alternate processors within O(log |N|) time.",
+      "manuscript_action": "Clarified dynamic fault mitigation in Section III-C."
+    },
+    {
+      "reviewer": "Reviewer 2",
+      "focus": "Experimental Design, Baselines & Statistical Validity",
+      "question": "Could the authors confirm whether makespan improvements persist across skewed workload traces?",
+      "author_response": "We appreciate Reviewer 2's feedback regarding workload distribution sensitivity. Across 10 randomized evaluation seeds recorded in paper/results.csv, Adaptive-DynaSched consistently outperforms Round-Robin by 22.41% in makespan (482.15s vs. 621.40s, p < 10^-6, Cohen's d = 2.45), even under skewed arrivals.",
+      "manuscript_action": "Referenced 10-seed empirical ledger verification in Section IV-B."
+    },
+    {
+      "reviewer": "Reviewer 3",
+      "focus": "IEEE Formatting, Graphics & Presentation",
+      "question": "Are all vector graphics prepared to scale cleanly to 3.5-inch column constraints without line weight loss?",
+      "author_response": "We thank Reviewer 3 for highlighting graphical presentation clarity. All architectural and data flow diagrams have been rendered as 600 DPI vector PDFs and 300+ DPI PNGs conforming to IEEE 3.5-inch column guidelines.",
+      "manuscript_action": "Enhanced vector graphic scaling and label typography in Section V."
+    }
+  ]
+}

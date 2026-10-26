@@ -1,0 +1,10 @@
+{
+  "figure_number": 2,
+  "caption": "Fig. 2. Proposed Adaptive-DynaSched system architecture and scheduling pipeline.",
+  "type": "architecture_diagram",
+  "width_in": 3.5,
+  "dpi": 600,
+  "png_path": "paper/figures/fig_2.png",
+  "pdf_path": "paper/figures/fig_2.pdf",
+  "mmd_path": "paper/figures/fig_2_arch.mmd"
+}

@@ -1,0 +1,29 @@
+{
+  "author_profile": {
+    "sample_files": [
+      "author_sample.txt"
+    ],
+    "sample_sentence_count": 4,
+    "mean_sentence_length": 17.25,
+    "std_sentence_length": 2.86,
+    "burstiness_index": 0.166
+  },
+  "refinement_metrics": {
+    "edits_count": 2,
+    "edits": [
+      {
+        "pattern": "zero SLA violations",
+        "replacement": "zero Service Level Agreement (SLA) violations"
+      },
+      {
+        "pattern": "(MIPS)",
+        "replacement": "(Million Instructions Per Second, MIPS)"
+      }
+    ],
+    "burstiness_before": 1.129,
+    "burstiness_after": 1.124,
+    "sentence_count": 65
+  },
+  "status": "COMPLIANT",
+  "guardrail_5_verified": true
+}

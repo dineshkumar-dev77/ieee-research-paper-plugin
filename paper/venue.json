@@ -1,0 +1,34 @@
+{
+  "venue_name": "IEEE Conference",
+  "venue_id": "ieee_conference",
+  "layout": {
+    "columns": 2,
+    "single_column_width_in": 3.5,
+    "double_column_width_in": 7.16,
+    "column_gutter_in": 0.16,
+    "margin_top_in": 0.75,
+    "margin_bottom_in": 1.0,
+    "margin_side_in": 0.625
+  },
+  "typography": {
+    "font_family": "Times New Roman",
+    "title_size_pt": 24,
+    "body_size_pt": 10,
+    "abstract_size_pt": 9,
+    "caption_size_pt": 8
+  },
+  "captions": {
+    "table_caption_position": "above",
+    "table_numbering": "Roman",
+    "table_prefix": "TABLE",
+    "figure_caption_position": "below",
+    "figure_numbering": "Arabic",
+    "figure_prefix": "Fig."
+  },
+  "graphics": {
+    "min_dpi": 300,
+    "line_art_dpi": 600,
+    "preferred_format": "png",
+    "vector_format": "pdf"
+  }
+}

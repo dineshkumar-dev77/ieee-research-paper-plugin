@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "figures_checked": 2,
+  "audits": [
+    {
+      "file": "fig_1.png",
+      "dimensions_px": [
+        1019,
+        750
+      ],
+      "dpi": 300,
+      "is_line_art": false,
+      "required_dpi": 300,
+      "effective_width_in": 3.4,
+      "width_compliant": true,
+      "dpi_compliant": true,
+      "caption": "Fig. 1. Makespan comparison across 10 evaluation seeds.",
+      "caption_compliant": true
+    },
+    {
+      "file": "fig_2.png",
+      "dimensions_px": [
+        2063,
+        2460
+      ],
+      "dpi": 600,
+      "is_line_art": true,
+      "required_dpi": 600,
+      "effective_width_in": 3.44,
+      "width_compliant": true,
+      "dpi_compliant": true,
+      "caption": "Fig. 2. Proposed Adaptive-DynaSched system architecture and scheduling pipeline.",
+      "caption_compliant": true
+    }
+  ],
+  "errors": []
+}
