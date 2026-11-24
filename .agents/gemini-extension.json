@@ -1,0 +1,5 @@
+{
+  "name": "ieee-research-paper-plugin",
+  "version": "1.0.0",
+  "contextFileName": ".agents/rules/guardrails.md"
+}
